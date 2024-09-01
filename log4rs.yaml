@@ -1,0 +1,16 @@
+appenders:
+  stdout:
+    kind: console
+    encoder:
+      pattern: "{d} - {m}{n}"
+  logfile:
+    kind: file
+    path: "key_mouse_tracker.log"
+    encoder:
+      pattern: "{d} - {m}{n}"
+
+root:
+  level: info
+  appenders:
+    - stdout
+    - logfile
